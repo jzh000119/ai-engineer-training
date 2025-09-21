@@ -18,19 +18,6 @@ class RegexIntentParser:
     正则意图识别器
     """
     def __init__(self):
-        # self.patterns = {
-        #     'query_order': [
-        #         r'查.订单(?:.*([A-Za-z]+\d+))?',  # 查订单AB12345
-        #
-        #         r'查.订单',
-        #
-        #     ],
-        #     'refund': [
-        #         r'退.*订单(?:.*([A-Za-z]+\d+))?',  # 退订单AB12345
-        #         r'申请退款.*订单(?:.*([A-Za-z]+\d+))?'
-        #     ]
-        # }
-
         self.patterns = {
             'query_order': [
                 r'查订单(?:.*?([A-Za-z]+\d+))?', # 查订单AB12345
